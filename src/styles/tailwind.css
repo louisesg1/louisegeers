@@ -3,5 +3,18 @@
 @tailwind utilities;
 
 @layer base{
+*{
+    background-color: #B4DCFF;
+    color: #B80000;
+    margin: 8px;
+}
+h1 {
+    @apply text-6xl;
+    @apply font-baskerville;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-baskerville;
+  }
 
 }
