@@ -6,7 +6,9 @@
 *{
     background-color: #B4DCFF;
     color: #B80000;
-    margin: 8px;
+}
+main{
+    margin: 1rem;
 }
 h1 {
     @apply text-6xl;
@@ -18,7 +20,7 @@ h1 {
   }
 
   p {
-    @apply text-xl;
+    @apply text-base;
     @apply font-inter;
   }
 }

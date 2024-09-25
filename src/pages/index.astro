@@ -6,60 +6,78 @@ import { Image } from "astro:assets";
 import thumbsup from "../assets/images/thumbsup.png";
 ---
 
-<MainLayout title="Titel">
-  <section class="text-center pt-6 pb-48">
+<MainLayout title="Louise Standal Geers">
+  <section class="text-center mt-16 pb-36">
     <h1>Louise Standal Geers</h1>
-    <h2>Digital design</h2>
+    <h2>Digitalt design</h2>
   </section>
-  <Banner text="About" />
+  <section class="md:grid grid-cols-2">
+    <article>
+      <Image src={thumbsup} alt="" />
+    </article>
+    <article>
+      <p class="prose text-[#B80000]">
+        Hei! Jeg heter Louise og jeg studerer multimediedesign på Københavns
+        Erhvervsakademi på tredje semester. Innenfor multimediedesignfaget er
+        jeg primært interessert i UX og UI- design, men jeg er også glad i å
+        kode prosjekter og lære meg nye kodebiblioteker og språk. I forveien har
+        jeg alltid vært glad i å tegne og lage illustrasjoner, som er grunnen
+        til at jeg begynte å interessere meg for digitalt design. Jeg jobber
+        først og fremst i Figma og VS Code, men er også godt kjent med
+        Adobeprogrammer.
+      </p>
+    </article>
+  </section>
+  <Banner text="Ferdigheter" />
   <section>
-    <p class="line-clamp-5">
-      My name is Louise, and I am a third semester multimedia design student at
-      Copenhagen school of design and technology (KEA). I am originally from
-      Oslo, Norway. My biggest strengths are UX/UI design, as well as HTML and
-      CSS. I am also interested in illustration and art, which is the reason why
-      i want to work with design.
-    </p>
+    <p>Kode - HTML, CSS, JavaScript, Astro & Tailwind.css</p>
+    <p>Figma</p>
+    <p>Adobe - Photoshop, Illustrator, InDesign</p>
   </section>
-  <Banner text="Projects" />
+  <Banner text="Prosjekter" />
   <section>
-    <p>skriv om tidligere prosjekter</p>
+    <p>Colada archive</p>
+    <p>1 semester spill</p>
+    <p>Girl talk</p>
   </section>
-  <Banner text="Skills" />
-  <section>
-    <p>skriv om primære ferdigheter</p>
-  </section>
-  <Banner text="Contact" />
-  <section id="contact" class="border-b border-red-800">
-    <p>
+  <Banner text="Kontakt meg" />
+  <section id="contact">
+    <p
+      class="font-baskerville text-lg lowercase border-b border-red-800 py-4 box-sizing: border-box"
+    >
       <a
         href="https://www.linkedin.com/in/louise-standal-geers-a84a45289/"
         class="no-underline hover:italic"
         target="_blank">LinkedIn</a
       >
     </p>
-    <p>
+    <p class="font-baskerville text-lg lowercase border-b border-red-800 py-4">
       <a
         href="https://dribbble.com/louisegeers"
         class="no-underline hover:italic"
         target="_blank">Dribbble</a
       >
     </p>
-    <p>
+    <p class="font-baskerville text-lg lowercase border-b border-red-800 py-4">
       <a
         href="https://www.instagram.com/louisesgeers/"
         class="no-underline hover:italic"
         target="_blank">Instagram</a
       >
     </p>
-    <p>
+    <p class="font-baskerville text-lg lowercase border-b border-red-800 py-4">
+      <a
+        href="https://github.com/louisesg1"
+        class="no-underline hover:italic"
+        target="_blank">Github</a
+      >
+    </p>
+    <p class="font-baskerville text-lg lowercase border-b border-red-800 py-4">
       <a
         class="no-underline hover:italic"
-        href="mailto:louisesgeers@outlook.com">louisesgeers@outlook.com</a
+        href="mailto:louisesgeers@outlook.com"
+        >Epost - louisesgeers@outlook.com</a
       >
     </p>
   </section>
 </MainLayout>
-<article>
-  <Image src={thumbsup} alt="" />
-</article>
