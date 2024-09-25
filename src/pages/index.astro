@@ -7,13 +7,13 @@ import thumbsup from "../assets/images/thumbsup.png";
 ---
 
 <MainLayout title="Titel">
-  <section class="text-center font-baskerville">
+  <section class="text-center pt-6 pb-48">
     <h1>Louise Standal Geers</h1>
     <h2>Digital design</h2>
   </section>
   <Banner text="About" />
   <section>
-    <p class="">
+    <p class="line-clamp-5">
       My name is Louise, and I am a third semester multimedia design student at
       Copenhagen school of design and technology (KEA). I am originally from
       Oslo, Norway. My biggest strengths are UX/UI design, as well as HTML and
@@ -30,20 +30,36 @@ import thumbsup from "../assets/images/thumbsup.png";
     <p>skriv om primære ferdigheter</p>
   </section>
   <Banner text="Contact" />
-  <section id="contact">
-    <Link
-      href="https://www.linkedin.com/in/louise-standal-geers-a84a45289/"
-      target="_blank">LinkedIn</Link
-    >
-    <br />
-    <Link href="https://dribbble.com/louisegeers" target="_blank">Dribbble</Link
-    >
-    <br />
-    <Link href="https://www.instagram.com/louisesgeers/" target="_blank"
-      >Instagram</Link
-    >
+  <section id="contact" class="border-b border-red-800">
+    <p>
+      <a
+        href="https://www.linkedin.com/in/louise-standal-geers-a84a45289/"
+        class="no-underline hover:italic"
+        target="_blank">LinkedIn</a
+      >
+    </p>
+    <p>
+      <a
+        href="https://dribbble.com/louisegeers"
+        class="no-underline hover:italic"
+        target="_blank">Dribbble</a
+      >
+    </p>
+    <p>
+      <a
+        href="https://www.instagram.com/louisesgeers/"
+        class="no-underline hover:italic"
+        target="_blank">Instagram</a
+      >
+    </p>
+    <p>
+      <a
+        class="no-underline hover:italic"
+        href="mailto:louisesgeers@outlook.com">louisesgeers@outlook.com</a
+      >
+    </p>
   </section>
-  <article>
-    <Image src={thumbsup} alt="" />
-  </article>
 </MainLayout>
+<article>
+  <Image src={thumbsup} alt="" />
+</article>

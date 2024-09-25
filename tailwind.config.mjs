@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         baskerville: ["Baskerville", "serif"],
+        inter: ["Inter", "sans-serif"],
       },
     },
   },
