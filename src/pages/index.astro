@@ -3,7 +3,7 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Banner from "../components/Banner.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import profilbilde from "../assets/images/profilbilde.webp";
 ---
 
 <MainLayout title="Louise Standal Geers">
@@ -11,43 +11,81 @@ import thumbsup from "../assets/images/thumbsup.png";
     <h1>Louise Standal Geers</h1>
     <h2>Digitalt design</h2>
   </section>
-  <section class="md:grid grid-cols-2">
-    <article>
-      <Image src={thumbsup} alt="" />
+  <section class="md:grid grid-cols-2 mb-28">
+    <article class="flex justify-center">
+      <Image src={profilbilde} alt="profilbilde" class="max-w-96 mx-auto" />
     </article>
-    <article>
+    <article class="flex flex-col justify-end md:pl-10">
+      <h2>Om meg</h2>
       <p class="prose text-[#B80000]">
-        Hei! Jeg heter Louise og jeg studerer multimediedesign på Københavns
-        Erhvervsakademi på tredje semester. Innenfor multimediedesignfaget er
+        Hei! Jeg heter Louise og jeg studerer Multimediedesign på Københavns
+        Erhvervsakademi på tredje semester. Innenfor Multimediedesignfaget er
         jeg primært interessert i UX og UI- design, men jeg er også glad i å
-        kode prosjekter og lære meg nye kodebiblioteker og språk. I forveien har
-        jeg alltid vært glad i å tegne og lage illustrasjoner, som er grunnen
-        til at jeg begynte å interessere meg for digitalt design. Jeg jobber
-        først og fremst i Figma og VS Code, men er også godt kjent med
-        Adobeprogrammer.
+        kode prosjekter og lære meg nye kodebiblioteker og språk. Jeg har alltid
+        vært glad i å tegne og lage illustrasjoner, som er grunnen til at jeg
+        begynte å interessere meg for digitalt design. Jeg jobber først og
+        fremst i Figma og VS Code, men er også godt kjent med Adobeprogrammer.
       </p>
     </article>
   </section>
   <Banner text="Ferdigheter" />
   <section>
+    <p class="font-inter text-lg py-2">Kode - HTML, CSS, JavaScript (1 år)</p>
+    <p class="font-inter text-lg py-2">Astro & Tailwind.css (6 mnd)</p>
+    <p class="font-inter text-lg py-2">Figma (1.5 år)</p>
     <p class="font-inter text-lg py-2">
-      Kode - HTML, CSS, JavaScript, Astro & Tailwind.css
+      Adobe - Photoshop, Illustrator, InDesign (5 år)
     </p>
-    <p class="font-inter text-lg py-2">Figma</p>
-    <p class="font-inter text-lg py-2">
-      Adobe - Photoshop, Illustrator, InDesign
-    </p>
-    <p class="font-inter text-lg py-2">Responsivt design</p>
-    <p class="font-inter text-lg py-2">Brukertesting</p>
+    <p class="font-inter text-lg py-2">Responsivt design (1 år)</p>
+    <p class="font-inter text-lg py-2">Brukertesting (1 år)</p>
+    <p class="font-inter text-lg py-2">SCRUM (1 år)</p>
   </section>
   <Banner text="Prosjekter" />
   <section>
+    <h2>Colada archive - Design av hjemmeside</h2>
     <p class="font-inter text-lg py-2">
-      Colada archive - design, kode, brukertesting, some-innhold -
+      design, kode, brukertesting, some-innhold -
     </p>
   </section>
+  <Banner text="Arbeidserfaring" />
+  <section>
+    <h2>Café Kaf - Barista (2024-)</h2>
+    <p class="font-inter text-lg py-2">
+      Jeg jobber på Café Kaf i København ved siden av studiet.
+    </p>
+    <br />
+    <h2>Kaffebrenneriet - Barista (2022-24)</h2>
+    <p class="font-inter text-lg py-2"></p>
+    <br />
+    <h2>Nysirkus Bjerke - Instruktør i luftakrobatikk (2019-2023)</h2>
+    <p class="font-inter text-lg py-2 prose text-[#B80000]">
+      Jeg begynte å jobbe på Nysirkus Bjerke mens jeg gikk på videregående. Her
+      lærte jeg å jobbe som en del av et team, og å ta ansvar. Deler av min
+      ansettelse var preget av Covid-19, hvilket gjorde at jeg lærte å utføre
+      jobben min på en fleksibel og tilpasningsdyktig måte.
+    </p>
+  </section>
+  <Banner text="Utdannelse" />
+  <h2>Københavns Erhvervsakademi - Multimediedesign (2023-)</h2>
+  <p class="font-inter text-lg py-2 prose text-[#B80000]"></p>
+  <br />
+  <h2>Roskilde Festival Højskole - Kunst, Grafisk Design, mm. (2021)</h2>
+  <p class="font-inter text-lg py-2 prose text-[#B80000]">
+    Etter videregående gikk jeg videre med kunst og design. På folkehøyskolen
+    fikk jeg brukt mine kjennskaper til kunst og design til å jobbe med oppgaver
+    på en friere måte, og fikk dermed øvd på å jobbe kreativt innenfor en
+    tidsramme. Her fikk jeg også mer erfaring med å jobbe med oppgaver i en
+    gruppe.
+  </p>
+  <h2>Edvard Munch VGS - Kunst, Design og Arkitektur (2018-2021)</h2>
+  <p class="font-inter text-lg py-2 prose text-[#B80000]">
+    På Edvard Munch VGS lærte jeg å bruke Adobe-programmene Photoshop,
+    Illustrator og Indesign. Jeg lærte mye om visuelle virkemidler og
+    designprinsipper, og hvordan man planlegger og stukturerer i en kreativ
+    prosess.
+  </p>
   <Banner text="Kontakt meg" />
-  <section id="contact">
+  <section class="mb-20" id="contact">
     <p class="font-inter text-lg py-2">
       <a
         href="https://www.linkedin.com/in/louise-standal-geers-a84a45289/"
